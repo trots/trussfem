@@ -1,0 +1,47 @@
+{
+  "name": "Artamonova's example",
+  "youngs_modulus": 200000000000,
+  "poisson_coefficient": 0.25,
+  "truss": {
+    "nodes": [
+      {"id": 0, "x": 0.0, "y": 0.0},
+      {"id": 1, "x": 2.0, "y": 2.0},
+      {"id": 2, "x": 2.0, "y": 0.0},
+      {"id": 3, "x": 2.0, "y": -1.0},
+      {"id": 4, "x": 4.0, "y": 2.0},
+      {"id": 5, "x": 4.0, "y": 0.0},
+      {"id": 6, "x": 6.0, "y": 2.0},
+      {"id": 7, "x": 6.0, "y": 0.0},
+      {"id": 8, "x": 6.0, "y": -1.0},
+      {"id": 9, "x": 8.0, "y": 0.0}
+    ],
+    "elements": [
+      {"id": 0, "nodes": [0, 1], "profile_area": 0.0001},
+      {"id": 1, "nodes": [0, 2], "profile_area": 0.0001},
+      {"id": 2, "nodes": [0, 3], "profile_area": 0.0001},
+      {"id": 3, "nodes": [1, 2], "profile_area": 0.0001},
+      {"id": 4, "nodes": [2, 3], "profile_area": 0.0001},
+      {"id": 5, "nodes": [1, 4], "profile_area": 0.0001},
+      {"id": 6, "nodes": [2, 5], "profile_area": 0.0001},
+      {"id": 7, "nodes": [3, 5], "profile_area": 0.0001},
+      {"id": 8, "nodes": [4, 5], "profile_area": 0.0001},
+      {"id": 9, "nodes": [4, 6], "profile_area": 0.0001},
+      {"id": 10, "nodes": [5, 7], "profile_area": 0.0001},
+      {"id": 11, "nodes": [5, 8], "profile_area": 0.0001},
+      {"id": 12, "nodes": [6, 7], "profile_area": 0.0001},
+      {"id": 13, "nodes": [7, 8], "profile_area": 0.0001},
+      {"id": 14, "nodes": [6, 9], "profile_area": 0.0001},
+      {"id": 15, "nodes": [7, 9], "profile_area": 0.0001},
+      {"id": 16, "nodes": [8, 9], "profile_area": 0.0001}
+    ]
+  },
+  "constraints": [
+    {"id": 0, "node_id": 0, "constraint_x": true, "constraint_y": true},
+    {"id": 1, "node_id": 9, "constraint_x": false, "constraint_y": true}
+  ],
+  "loads": [
+    {"id": 0, "node_id": 2, "load_x": 0.0, "load_y": -20000.0},
+    {"id": 0, "node_id": 5, "load_x": 0.0, "load_y": -20000.0},
+    {"id": 0, "node_id": 7, "load_x": 0.0, "load_y": -20000.0}
+  ]
+}

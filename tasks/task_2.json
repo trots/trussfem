@@ -1,0 +1,26 @@
+{
+  "name": "Three-element truss stretch",
+  "youngs_modulus": 200000000000,
+  "poisson_coefficient": 0.25,
+  "truss": {
+    "nodes": [
+      {"id": 0, "x": 0.0, "y": 0.0},
+      {"id": 1, "x": 0.4, "y": 0.0},
+      {"id": 2, "x": 1.05, "y": 0.0},
+      {"id": 3, "x": 1.55, "y": 0.0}
+    ],
+    "elements": [
+      {"id": 0, "nodes": [0, 1], "profile_area": 0.000484},
+      {"id": 1, "nodes": [1, 2], "profile_area": 0.000484},
+      {"id": 2, "nodes": [2, 3], "profile_area": 0.000484}
+    ]
+  },
+  "constraints": [
+    {"id": 0, "node_id": 0, "constraint_x": true, "constraint_y": true}
+  ],
+  "loads": [
+    {"id": 0, "node_id": 1, "load_x": -25000.0, "load_y": 0.0},
+    {"id": 1, "node_id": 2, "load_x": 100000.0, "load_y": 0.0},
+    {"id": 2, "node_id": 3, "load_x": -30000.0, "load_y": 0.0}
+  ]
+}

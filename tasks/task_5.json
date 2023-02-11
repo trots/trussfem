@@ -1,0 +1,41 @@
+{
+  "name": "Galager's book truss 1",
+  "youngs_modulus": 200000000000,
+  "poisson_coefficient": 0.25,
+  "truss": {
+    "nodes": [
+      {"id": 0, "x": 0.0, "y": 0.0},
+      {"id": 1, "x": 0.508, "y": 0.0},
+      {"id": 2, "x": 0.889, "y": 0.0},
+      {"id": 3, "x": 1.016, "y": 0.762},
+      {"id": 4, "x": 0.762, "y": 0.762},
+      {"id": 5, "x": 0.508, "y": 0.762},
+      {"id": 6, "x": 0.254, "y": 0.381},
+      {"id": 7, "x": 0.508, "y": 0.381},
+      {"id": 8, "x": 0.635, "y": 0.381}
+    ],
+    "elements": [
+      {"id": 0, "nodes": [0, 6], "profile_area": 0.0001},
+      {"id": 1, "nodes": [1, 7], "profile_area": 0.0001},
+      {"id": 2, "nodes": [2, 8], "profile_area": 0.0001},
+      {"id": 3, "nodes": [6, 7], "profile_area": 0.0001},
+      {"id": 4, "nodes": [7, 8], "profile_area": 0.0001},
+      {"id": 5, "nodes": [6, 5], "profile_area": 0.0001},
+      {"id": 6, "nodes": [7, 5], "profile_area": 0.0001},
+      {"id": 7, "nodes": [8, 5], "profile_area": 0.0001},
+      {"id": 8, "nodes": [8, 4], "profile_area": 0.0001},
+      {"id": 9, "nodes": [5, 4], "profile_area": 0.0001},
+      {"id": 10, "nodes": [4, 3], "profile_area": 0.0001}
+    ]
+  },
+  "constraints": [
+    {"id": 0, "node_id": 0, "constraint_x": true, "constraint_y": true},
+    {"id": 1, "node_id": 1, "constraint_x": true, "constraint_y": true},
+    {"id": 2, "node_id": 2, "constraint_x": true, "constraint_y": true},
+    {"id": 3, "node_id": 3, "constraint_x": true, "constraint_y": true}
+  ],
+  "loads": [
+    {"id": 0, "node_id": 4, "load_x": 0.0, "load_y": -30000.0},
+    {"id": 0, "node_id": 6, "load_x": 30000.0, "load_y": 0.0}
+  ]
+}
