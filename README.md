@@ -57,10 +57,15 @@ Task object example.
 - tasks/task_1.json : Simple one-element stretching
 - tasks/task_2.json : Three element stretching. See [1], [3].
 - tasks/task_3.json : Example from [2, p27].
+
   ![model3](doc/test3_model.PNG)
+
 - tasks/task_4.json : Example from [4, p15].
+
   ![model4](doc/test4_model.PNG)
+
 - tasks/task_5.json : Truss from [5, p105].
+
   ![model5](doc/test5_model.PNG)
 
 ## References
